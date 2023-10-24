@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="Stop and Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start and Record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gm"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="119dp"
+        android:layout_height="49dp"
+        android:text="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toEndOf="@+id/stop"
+        app:layout_constraintTop_toBottomOf="@+id/am"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <LinearLayout
+        android:id="@+id/gm"
+        android:layout_width="193dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="88dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/gx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/gy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/gz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/am"
+        android:layout_width="195dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="88dp"
+        android:orientation="vertical"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toEndOf="@+id/gm"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/ay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp" />
+
+        <TextView
+            android:id="@+id/az"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timeeer"
+        android:layout_width="186dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="392dp"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gm" />
+
+    <TextView
+        android:id="@+id/Iter"
+        android:layout_width="149dp"
+        android:layout_height="47dp"
+        android:text="Iteration"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/activity"
+        android:layout_width="176dp"
+        android:layout_height="35dp"
+        android:text="Activity"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Iter"
+        app:layout_constraintVertical_bias="0.306" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
